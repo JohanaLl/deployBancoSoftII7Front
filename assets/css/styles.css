@@ -1,0 +1,237 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    background: #f1f1f1;
+  }
+  nav {
+    background: #11204b ;
+    padding: 0px 20px 0px 20px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: #d5d8e6;
+    text-decoration: none;
+    font-family: "Segoe UI";
+    font-weight: bold; 
+  }
+
+  .logo a:hover {
+    text-decoration: none;
+    color: #d5d8e6;
+  }
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  .logo a,
+  .toggle a {
+    font-size: 40px;
+  }
+  
+  /* Mobile menu */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+
+  /* Tablet menu */
+  @media all and (min-width: 600px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 2;
+    }
+    .toggle {
+      flex: 1;
+      text-align: right;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      order: 2;
+    }
+    .button.secondary {
+      border: 0;
+    }
+
+  }
+  /* Desktop menu */
+  @media all and (min-width: 900px) {
+    .item {
+      display: block;
+      width: auto;
+    }
+    .toggle {
+      display: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .img-logo{
+      position: left;
+      order: 0;
+    }
+    .item {
+      order: 1;
+    }
+    .button {
+      order: 2;
+    }
+    .menu li {
+      padding: 15px 10px;
+    }
+    .menu li.button {
+      padding-right: 0;
+    }
+  }
+
+  .forms {
+    width: 600px;
+    margin: 0 auto;
+    color: #002C76;
+  }
+
+  .general {
+    padding: 10px;
+  }
+
+  .obligatorio {
+    color: #ffd200;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .mensajes {
+    padding: 0px 20px 20px;
+    color: #002C76;
+  } 
+
+  .mensajes1{
+    color: #32415c;
+  }
+
+  .btn{
+    font: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #ffffff;
+    
+    border-radius: 50px;
+    width:150px;
+    height:40px;
+  }
+
+  .comercio {
+    color: #11204b;
+    border: 2px solid #11204b;
+  }
+
+  .registro{
+
+    background-color: #11204b;
+  }
+
+
+  .abs-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container * {
+    box-sizing: border-box;
+  }
+  
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
+  }
+  
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+  
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+  }
+  
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+  }
+  
+  .flex-inner li {
+    width: 100px;
+  }
